@@ -44,4 +44,30 @@ $(document).ready(function() {
 
 	})
 
+	$('.tweet-actions').hide()
+	$('.tweet').hover( function() { 
+		$('.tweet-actions', this).show()
+	}, function(){
+		$('.tweet-actions', this).hide()
+	})
+
+	$('.stats, .reply').hide()
+	$('.tweet').click(function() { 
+		$('.stats, .reply', this).slideToggle()
+	})
+
+	// var timeStamp = $('.time', this).text()
+	// $('.time').attr('title', timeStamp)
+	// $('.time').timeago()
+
+
+
+
+
+
+
+
+
+
+
 })
